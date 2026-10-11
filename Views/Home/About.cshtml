@@ -2,9 +2,20 @@
     ViewData["Title"] = "关于我";
 }
 
-<section>
-    <h1>关于我</h1>
-    <p>你好，我是 Keyan，一名计算机专业大学生。</p>
-    <a asp-controller="Home" asp-action="Index">返回首页</a>
-</section>
+<section class="space-y-6">
+    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        关于我
+    </h1>
 
+    <div class="rounded-xl border border-slate-200 bg-white p-6">
+        <p class="leading-relaxed text-slate-600">
+            你好，我是 Keyan，一名计算机专业大学生。
+        </p>
+    </div>
+
+    <a class="inline-block rounded-lg bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+       asp-controller="Home"
+       asp-action="Index">
+        返回首页
+    </a>
+</section>

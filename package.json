@@ -1,0 +1,29 @@
+{
+  "name": "keyan-site",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "css:build": "tailwindcss -i ./Styles/input.css -o ./wwwroot/css/tailwind.css --minify",
+    "css:watch": "tailwindcss -i ./Styles/input.css -o ./wwwroot/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeyanJin/keyan-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KeyanJin/keyan-site/issues"
+  },
+  "homepage": "https://github.com/KeyanJin/keyan-site#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "overrides": {
+    "@parcel/watcher": "2.6.0"
+  }
+}
